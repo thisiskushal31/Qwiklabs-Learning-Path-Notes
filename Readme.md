@@ -9,7 +9,7 @@ Here you'll find notes for [qwiklabs](https://www.cloudskillsboost.google/) lear
 | Path  | Note |
 | ----- | ----- |
 | **Google Cloud Computing Foundations** | *Click Here - To be Added* |
-| **Cloud Digital Leader Learning Path** | [Click Here]() |
+| **Cloud Digital Leader Learning Path** | [Click Here](./Cloud-Digital-Leader-Learning-Path) |
 | **Cloud Engineer Learning Path** | *Click Here - To be Added* |
 | **Cloud Architect Learning Path** | *Click Here - To be Added* |
 | **Hybrid and Multi-Cloud Architect Learning Path** | *Click Here - To be Added* |
@@ -20,6 +20,8 @@ Here you'll find notes for [qwiklabs](https://www.cloudskillsboost.google/) lear
 | **Cloud Developer Learning Path** | *Click Here - To be Added* |
 | **DevOps Engineer, SRE Learning Path** | *Click Here - To be Added* |
 | **Database Engineer Learning Path** | *Click Here - To be Added* |
+
+*All Credits for resource used goes to* **Google Cloud Platform**
 
 #### About Me
 
