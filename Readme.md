@@ -1,6 +1,6 @@
 ### Hi Folks 👋
 
-Here you'll find notes for [qwiklabs](https://www.cloudskillsboost.google/) learning path focusing on Google Cloud Platform (GCP). I hope you will find them useful. The repository will be updated regularly, and I also appreciate your contribution, so if you are considering contributing, please do so, but make sure you follow the contribution [guidelines] (To be added).
+Here you'll find notes for [qwiklabs](https://www.cloudskillsboost.google/) learning path focusing on Google Cloud Platform (GCP). I hope you will find them useful. The repository will be updated regularly, and I also appreciate your contribution, so if you are considering contributing, please do so, but make sure you follow the contribution [guidelines](./Contribution.md).
 
 -- Happy Exploring!!
 
