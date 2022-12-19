@@ -8,5 +8,5 @@ A Cloud Digital Leader can articulate the capabilities of core cloud products an
 | --- | --- | --- |
 | **1** | **Digital Transformation with Google Cloud** | [*Click Here*](./Introduction-to-Digital-Transformation-with-Google-Cloud.md) |
 | **2** | **Innovating with Data and Google Cloud** | [*Click Here*](./Innovating-with-Data-and-Google-Cloud.md) |
-| **3** | **Infrastructure and Application Modernization with Google Cloud** | [*Click Here*]() |
-| **4** | **Understanding Google Cloud Security and Operations** | [*Click Here*]() |
+| **3** | **Infrastructure and Application Modernization with Google Cloud** | [*Click Here*](./Infrastructure-and-Application-Modernization-with-Google-Cloud.md) |
+| **4** | **Understanding Google Cloud Security and Operations** | [*Click Here*](./Understanding-Google-Cloud-Security-and-Operations.md) |

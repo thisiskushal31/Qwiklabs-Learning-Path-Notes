@@ -1,6 +1,8 @@
-Barry: Hi, I'm Barry Schmell, a course designer and facilitator at Google Cloud. Business data is not a new term. Businesses have leveraged information about performance and operations for centuries to make decisions. Traditionally, data analysis could take days or months, is often incomplete, and complex reports were often done by specialized teams. Cloud technology disrupts traditional data analysis. Data can now be consumed, analyzed, and used at speed and scale never before possible.
+#### Innovating with Data and Google Cloud
 
-In fact, businesses can now leverage cloud technology to ingest data in real time to train machine learning models and to take action.
+Business data is not a new term. Businesses have leveraged information about performance and operations for centuries to make decisions. Traditionally, data analysis could take days or months, is often incomplete, and complex reports were often done by specialized teams. Cloud technology disrupts traditional data analysis. Data can now be consumed, analyzed, and used at speed and scale never before possible.
+
+In fact, businesses can now leverage cloud technology to ingest data in real time to train machine learning models and to take action.   
 In this course, we're going to explore how businesses can better use data in their digital transformation journey.
 
 In Module 1, I'll define data and its role in digital transformation. I'll identify where you can find data and how you can create new insights by combining different datasets.
