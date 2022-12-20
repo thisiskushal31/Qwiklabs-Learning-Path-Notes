@@ -80,3 +80,75 @@ These help organization to maintain Data integrity *i.e, transactional integrity
 So, Cloud database, Cloud data warehouse, Cloud data lakes are serves business either operating on regional scale or global scale cater there need to store and make analytic data to be analysed by business intelligence tool like **Looker** is a powerful business intelligence (BI) tool that can help a business develop insightful visualizations. It offers a user-friendly workflow, is completely browser-based (eliminating the need for desktop software) and facilitates dashboard collaboration. 
 
 Using Looker, Gaming companies have to constantly innovate to remain relevant in a crowded market. Mobile and video gaming analytics provides insight into user behaviors. By investigating how users interact with their games, a business can develop a better understanding of their audience and use that to create more compelling games.
+
+#### Module 3 (Innovation with Machine Learning)
+
+To understand machine learning you have to start by thinking about data in your business. Do you have a dashboard that analysts view every  day? or maybe there's a report that your managers review each month? Both the dashboard and the report are examples of backward-looking data. They look at what happened in the past. Most data analysis in your organization is probably looking for analysis of historical data to calculate metrics or identify trends. but to create value in your business, you need to use that data to make decisions for future business. 
+
+ML unlocks these capabilities and more. But what exactly is machine learning? Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
+
+Ml is a way to  use standard algorithms or standard models to analyze data in order to derive predictive insights and make repeated decisions at scale. 
+Put simply it's a way of teaching a computer how to solve problems by feeding it examples of the correct answers. Usually these problems are about predicting something. For example, you can predict how long it takes  to travel from one location to another by feeding the computer examples of the completed journeys and insights like customer satisfaction And improve.
+
+**Data Quality**
+The accuracy of those predictions, however, depend on large volumes of data that are free of bugs, a bug is a mistake in the code that causes unexpected or undesired behavior. In ML, even though there can be bugs in the implementation of an algorithm, bugs in data are far more common.
+
+The best data has three qualities. *One, it has coverage. Two, it's clean or consistent. And three, it's complete.* I'll explain each one.
+- *Data coverage*: refers to the scope of a problem domain and all possible scenarios it can account for. In other words, all possible input and output data.
+
+    ![Data_Coverage](./Assets/Data_Coverage.png)
+
+    Let's imagine an auto manufacturing use case where the goal is to use ML to automatically identify defects in car parts. Let's assume also that the car parts are divided into red and blue. If red and blue make up all the possible scenarios, but you only train your model with red parts, the model might not be able to detect defects in blue car parts when it's presented with new data. So more data and broader coverage produce a more accurate ML model.
+
+- *Data Cleanliness*: This is sometimes called data consistency. Data is considered dirty or inconsistent if it includes or excludes anything that might prevent an ML model from making accurate predictions. This is a lot like the errors or bugs we talked about earlier. The simplest form of inconsistency in data is data format.
+    ![Data_Cleanliness](./Assets/Data_Cleanliness.png)
+    
+    Let's return to our manufacturing scenario. Where do you think inconsistencies could occur? Well, if you're using photos to look for defects in car parts, you need to be careful with which images you choose to train the model. For example, if the images have shadows in them, the model won't know whether shadows are part of an object or not. If you want to make predictions from images that are supposed to have shadows, that's okay-- otherwise your data is dirty. Incorrect labels? which is another form of dirty data.
+    In this scenario, you might have parts that were labeled as fractured, but in reality they were discarded because they were the wrong size. There are lots of examples of human error that causes dirty data as well.
+    ***The more incorrect or dirty data you have, the more correct and clean data you'll need to provide a counterbalance so the ML model learns the correct outcome.***
+- *Data Completeness*: This refers to the availability of sufficient data about the world to replace human knowledge.
+    Think of this as the various data categories or themes that help complete a user's profile such as address, gender, or height. Incomplete data can limit the performance of an ML model.
+    We say there's incomplete data when there's a *lack of better data*, there are *mistaken expectations about how ML works and what it's capable of*, or *program design and implementation are poorly executed*.
+
+    ![Data_Completeness](./Assets/Data_Completeness.png)
+
+    Let's go back to our manufacturing example. Imagine that one of the major sources of defects is overheating, but you're not collecting temperature data. That's an example of incomplete data.
+    Even if you start collecting temperature data now, you may not have the historical data that maps to past examples of good and fractured parts. Another form of incomplete data is the number of cases for all possible scenarios the data is intended to cover. In the same manufacturing example, your goal is to match the labels, good condition and fractured, with every part. If axle is one item you're evaluating for defects, you'll need examples of axles in good condition and fractured. If you don't have that data, your data is incomplete.
+
+*Remember*--data is the tunnel through which your model views the world. Anything the model can't see it assumes doesn't exist. The good news is that most of these problems can be solved simply by getting more data, but you have to be purposeful in collecting that data. Do you need to improve coverage, improve cleanliness or consistency, or improve completeness? 
+
+*Remember*--data is central to ML.
+
+**AI and ML with Google Cloud**    
+*Google Cloud democratizes ai by providing a range of tools to support an entire machine learning workflow across different model types and varying levels of ml expertise.*   
+**When you start a machine learning project you can use this simple flow chart to help you identify the best approach for you. You need to start by asking yourself a few questions.**  
+
+![Machine_Learning_Starting_Question](./Assets/Machine_Learning_Starting_Question.png)
+
+First, do you have your own training data? If not you need to use some of google's pre-trained apis to solve your problem. If you do have your own training data, then you'll use services within vertex ai, a unified managed platform for building ml using google cloud, to identify what kinds of models you'll be building. You need to ask another question. Are you or your team writing the model code yourself? If not then you'll train an existing ml model with your own data. if you are, you'll build a custom ml model and train it using your own data.
+
+Let's take a closer look at these three ml approaches
+
+- *Pre-Trained Apis*: If you don't have your own training data, you'll use google cloud pre-trained apis. A great option if you don't have specialized data scientists but do have business analysts and developers. this is the fastest and lowest effort approach but is less customized. google cloud can help developers build smart apps using pre-trained apis, which provide access to ml models for common tasks like analyzing images video and text. 
+    Apis can be deployed in a virtual private cloud, on premises or in google's public cloud they can be used regardless of the level of ml expertise.
+- *AutoMl*: If you want to input your own data, you'll need to use automl natural language. automl natural language lets you build and deploy custom machine learning models that analyze and categorize documents and identify entities or assess attitudes within them. you can use the automl user interface to upload your training data and test your custom model without a single line of code. these are just a few of the many google cloud ml offerings which also intergrated to api to get desired output.
+- *Custom Model Tooling*: Vertex-Ai is a platform for creating custom end-to-end ai models providing a suite of products to help you at each stage of your ml workflow. from gathering data, to feature engineering, to building, deploying and monitoring models. we also have google cloud ai hub which hosts a repository of plug-and-play ai components for developers and data scientists to use in their projects. with ml models that are fully custom built, end-to-end the process takes the longest and requires a specialist team of data scientists and engineers.
+
+![Innovating with Data on GCP](./Assets/Innovating_with_Data_on_GCP.png)
+
+This visual is a helpful way to understand how *infrastructure,data analytics and ml* fit together.
+
+- **IT Infrastructure:** Mainly consist of it infrastructure applications and data management.
+- **Data Analytics:** Consist of data lakes and data warehouses on which you can run data analytics to make data driven decisions.
+- **Machine Learning:** Consist of ml and data science made up of rapid prototyping and reproducible experiments.
+
+*Real-World Application of Machine Learning:*
+
+- **Replacing** *rule-based systems*: We will understand using real world implementation when from India search hotels Google search give you hotel near their location what happens if large number of locations will increased rule based system it will become messy so here machine learning comes in and lifts the weight gives back hotel recommendation based on the location using machine learning model.
+
+- **Automate Processes**: We will understand using real life implementation for a real estate company what they want inspect a vase how much it costs so they can make an app which scan the vase using ml get back the output instead of manual inspection.
+
+- **Understand** *unstructured data*: We will understand using real life implementation for a E-commerce company, they want to make customer support better so scan their emails and forward the email to the right team make the process faster by understanding the tone, format, image and the keywords given in the email which is unstructured data.
+
+- **Personalizing** *application*: We will understand using real life implementation Here YouTube is a great example of this where I can find the video I like in recommendation which makes the application more intricate and engaging And same apply for a E-commerce application recommendation page for any application where recommendation comes to the key part of their application.
+
