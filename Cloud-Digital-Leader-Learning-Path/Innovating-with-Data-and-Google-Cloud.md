@@ -60,4 +60,23 @@ These help organization to maintain Data integrity *i.e, transactional integrity
     These are solution by Google Cloud like BigQuery, Pub/Sub, Dataflow
     - *BigQuery*: BigQuery is Google Cloud's fully managed, petabyte-scale, and cost-effective analytics data warehouse that lets you run analytics over vast amounts of data in near real time. Importantly, BigQuery is serverless. This doesn't mean that there's no server. It means that resources such as compute power are automatically provisioned behind the scenes as needed to run your queries. So businesses do not pay for compute power unless they're actually running a query.
     - *Pub/Sub and Dataflow*: Pub/Sub and Dataflow. Pub/Sub is a service for real-time ingestion of data, whereas Dataflow is a service for large scale processing of data. Pub/Sub and Dataflow, can work together to bring unstructured data into the Cloud and transform it into semi-structured data. This transformed data can then be sent directly from Dataflow to BigQuery, where it becomes immediately available for analysis.
-    
+
+- *Cloud data lakes*: A data lake is a centralized repository designed to store, process, and secure large amounts of structured, semistructured, and unstructured data. It can store data in its native format and process any variety of it, ignoring size limits. 
+
+    A data warehouse's main purpose is to enable easy data analysis by transforming and consolidating data. Data lakes are inherently flexible which is one of the biggest limitations of data warehouses. Analytics that are built solely on traditional data warehouses make it challenging to deal with data that doesn't conform to a well-defined schema, because that data is often disregarded. Data lakes are often made up of many different products. When determining which product to use for your data lake you must consider the nature of the data being ingested.
+    This flow chart shows the appropriate google cloud storage products based on whether structured semi-structured or unstructured data is being stored.
+    ![Google_Cloud_Storage_Products_Type_of_Data](./Assets/Google_Cloud_Storage_Products_Type_of_Data.png)
+    Cloud storage is a service that enables you to store and serve binary large objects or blob data blobs are typically images, audio or other media objects. 
+    Cloud storage provides organizations with different options so they can tailor their object storage based on their access needs.
+    In fact, some of the key benefits of google cloud storage are that you can store unlimited data with no minimum amount required. you can retrieve your data as often as you'd like and you can access it from anywhere in the world. 
+    Suppose for instance your organization is storing data that is frequently accessed from around the world. This might be data that serves website content or mobile applications or streaming videos. For this type of data cloud storage  offers multi-regional storage. It's ideal for serving content to users worldwide like spotify.
+    because cloud storage stores geographically  disperse copies of your data, your organization is less likely to lose its data in the case of a disaster.
+    Regional storage is also offered by cloud storage. This is ideal when your organization wants to use the data locally. It gives you added throughput and performance by storing your data in the same region as your compute infrastructure. This is a great choice for internal use cases such as data analytics and machine learning jobs for data that will be accessed less often.
+    Cloud Storage offers *Nearline, Coldline, and Archive storage classes*.
+    - Nearline is best for data you don't expect to access more than once per month, such as multimedia, file storage or online backups.
+    - Coldline is best for data that you plan to access at most once per 90 days or quarter.
+    - Archive is best for data that you plan to access at most once per year such as archive data or as a backup for disaster recovery.
+
+So, Cloud database, Cloud data warehouse, Cloud data lakes are serves business either operating on regional scale or global scale cater there need to store and make analytic data to be analysed by business intelligence tool like **Looker** is a powerful business intelligence (BI) tool that can help a business develop insightful visualizations. It offers a user-friendly workflow, is completely browser-based (eliminating the need for desktop software) and facilitates dashboard collaboration. 
+
+Using Looker, Gaming companies have to constantly innovate to remain relevant in a crowded market. Mobile and video gaming analytics provides insight into user behaviors. By investigating how users interact with their games, a business can develop a better understanding of their audience and use that to create more compelling games.
